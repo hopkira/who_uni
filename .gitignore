@@ -1,4 +1,10 @@
 *.txt
 *.xml
 *.pdf
+*.json
+*.mw
+k9_stories
+func_env
+__pycache__
+secrets.py
 
