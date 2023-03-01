@@ -6,4 +6,6 @@ k9_stories
 func_env
 __pycache__
 secrets.py
-
+.env
+bin/
+lib/
