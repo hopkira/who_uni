@@ -3,6 +3,7 @@
 *.json
 *.mw
 *.txt
+k9*.txt
 k9_stories
 func_env
 __pycache__
@@ -15,3 +16,4 @@ include/
 .wiki.json.icloud
 .Wikipedia.xml.icloud
 *.cfg
+stories/
