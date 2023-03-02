@@ -2,6 +2,7 @@
 *.pdf
 *.json
 *.mw
+*.txt
 k9_stories
 func_env
 __pycache__
@@ -9,3 +10,8 @@ secrets.py
 .env
 bin/
 lib/
+.ipynb_checkpoints/
+include/
+.wiki.json.icloud
+.Wikipedia.xml.icloud
+*.cfg
