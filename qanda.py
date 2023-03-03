@@ -4,7 +4,6 @@
 import numpy as np
 import openai
 import pandas as pd
-import tiktoken
 
 COMPLETIONS_MODEL = "text-davinci-003"
 EMBEDDING_MODEL = "text-embedding-ada-002"
@@ -12,8 +11,8 @@ openai.api_key_path = ".env"
 MAX_SECTION_LEN = 500
 SEPARATOR = "\n"
 ENCODING = "gpt2"  # encoding for text-davinci-003
-encoding = tiktoken.get_encoding(ENCODING)
-separator_len = len(encoding.encode(SEPARATOR))
+#encoding = tiktoken.get_encoding(ENCODING)
+#separator_len = len(encoding.encode(SEPARATOR))
 
 def load_embeddings(filename):
     """
@@ -69,7 +68,7 @@ def build_prompt(question: str, context_embeddings: dict) -> str:
         story, mistress, synopsis = content
         length = len(text)
         syn_length = len(synopsis)
-        if (length + syn_length + separator_len) > MAX_SECTION_LEN:
+        if (length + syn_length) > MAX_SECTION_LEN:
             print(syn_length)
             break
         text = (SEPARATOR + text + synopsis).replace("\n"," ")
