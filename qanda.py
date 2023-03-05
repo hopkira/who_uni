@@ -81,7 +81,7 @@ class Backhistory():
     Question and answer capability
     '''
     def __init__(self) -> None:
-        self.document_embeddings = load_embeddings("k9_story_vectors_500.csv")
+        self.document_embeddings = load_embeddings("./k9_story_vectors_500.csv")
 
     def get_answer(self, question:str):
         prompt = build_prompt(
