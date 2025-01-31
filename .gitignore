@@ -17,3 +17,5 @@ include/
 .Wikipedia.xml.icloud
 *.cfg
 stories/
+ollama/
+chroma_db/
